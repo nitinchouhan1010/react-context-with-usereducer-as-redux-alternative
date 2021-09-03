@@ -7,7 +7,8 @@ const ComponentC = () => {
   const { dispatch } = ContextValue;
 
   return (
-    <div>
+    <div className="component-b">
+      <p>component-c</p>
       <div>
         {' '}
         <button onClick={() => dispatch({ type: 'decrement' })}>

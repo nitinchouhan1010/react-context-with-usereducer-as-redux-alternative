@@ -7,7 +7,12 @@ const ComponentB = () => {
 
   const { assetDetail, state } = ContextValue;
 
-  return <div>{state.count}</div>;
+  return (
+    <div className="component-b">
+      <p>component-b</p>
+      {state.count}
+    </div>
+  );
 };
 
 export default ComponentB;
